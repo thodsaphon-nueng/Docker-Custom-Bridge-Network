@@ -3,6 +3,8 @@
 ## ภาพรวม
 Lab นี้มีความตั้งใจ แสดงการสร้างเครือข่าย bridge แบบกำหนดเองเพื่อเชื่อมต่อ Docker containers โดยใช้ Linux bridge และ veth pairs คุณจะได้เรียนรู้การกำหนดค่าเครือข่าย container ด้วยตนเอง โดยไม่ใช้ระบบเครือข่ายมาตรฐานของ Docker
 
+<img width="1901" height="948" alt="Image" src="https://github.com/user-attachments/assets/e80f9321-7917-4499-aa8b-1c2b772641fc" />
+
 ## วัตถุประสงค์การเรียนรู้
 - เข้าใจแนวคิด Linux bridge networking
 - เรียนรู้การสร้างและจัดการ veth pairs
@@ -179,4 +181,5 @@ sudo tcpdump -i br0 icmp
 # ตรวจสอบ ARP tables
 sudo nsenter --target $CONTAINER1_PID --net arp -a
 ```
+
 
